@@ -40,12 +40,6 @@
     .btn-danger { background: #dc3545; color: white; font-size: 12px; padding: 5px 10px; border: none; cursor: pointer; }
     .btn-info { background: #17a2b8; color: white; font-size: 12px; padding: 5px 10px; text-decoration: none; }
 
-    .btn-search:hover, .btn-reset:hover { 
-        transform: scale(1.05); 
-        transition: all 0.2s ease-in-out; 
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
     table { width: 100%; border-collapse: collapse; background: white; margin-top: 10px; }
     th { background: #3097af; color: white; padding: 12px; text-align: left; }
     td { padding: 12px; border-bottom: 1px solid #eee; }
