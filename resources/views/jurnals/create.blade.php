@@ -95,7 +95,7 @@
             <img src="https://smkn11semarang.sch.id/wp-content/uploads/2022/07/cropped-cropped-Logo-SMK-N-11-Smg-HD-1-scaled.png" alt="Logo SMKN N 11 Smg">
             <p>PERPUSTAKAAN SMKN 11 SEMARANG</p>
         </div>
-        <div style="widhth: 80px"></div>
+        <div style="width: 80px;"></div>
     </div>
 
     <h1>Absensi Perpustakaan</h1>
@@ -105,7 +105,7 @@
 
         <div class="form-group">
             <label>Nama</label>
-            <input type="text" name="nama" value="{{ old('nama') }}" required>
+            <input style="text-transform: uppercase;" type="text" name="nama" value="{{ old('nama') }}" required>
             @error('nama')
                 <div class="error">{{ $message }}</div>
             @enderror
@@ -113,7 +113,7 @@
 
         <div class="form-group">
             <label>Kelas</label>
-            <input type="text" name="kelas" value="{{ old('kelas') }}" required>
+            <input style="text-transform: uppercase;" type="text" name="kelas" value="{{ old('kelas') }}" required>
             @error('kelas')
                 <div class="error">{{ $message }}</div>
             @enderror
@@ -131,7 +131,7 @@
 
         <div class="form-group" id="form-buku" style="display: none;">
             <label>Nama Buku</label>
-            <input type="text" name="judul_buku" id="judul_buku" value="{{ old('judul_buku') }}">
+            <input style="text-transform: uppercase;" type="text" name="judul_buku" id="judul_buku" value="{{ old('judul_buku') }}">
             @error('judul_buku')
                 <div class="error">{{ $message }}</div>
             @enderror

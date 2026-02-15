@@ -239,7 +239,7 @@
         <img src="https://smkn11semarang.sch.id/wp-content/uploads/2022/07/cropped-cropped-Logo-SMK-N-11-Smg-HD-1-scaled.png" alt="Logo SMKN N 11 Smg">
         <p>PERPUSTAKAAN SMKN 11 SEMARANG</p>
     </div>
-    <div style="widhth: 80px"></div>
+    <div style="width: 80px;"></div>
 </div>
 
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
