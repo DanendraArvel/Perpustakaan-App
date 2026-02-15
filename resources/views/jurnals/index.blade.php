@@ -7,15 +7,33 @@
     .filter-container { background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #dee2e6; }
     .search-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
     .search-box, .filter-select { padding: 10px; border: 1px solid #ddd; border-radius: 5px; flex: 1; min-width: 150px; }
-    .btn-search { padding: 10px 25px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    .btn-search { padding: 10px 25px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold; }
     .btn-search:hover { 
         background: #0056b3; 
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transform: scale(1.05);
+        transition: all 0.3s ease;
     }
-    .btn-reset { padding: 10px 20px; background: #6c757d; color: white; border-radius: 5px; text-decoration: none; font-size: 14px; }
+    .btn-reset { padding: 10px 20px; background: #6c757d; color: white; border-radius: 5px; text-decoration: none; font-size: 14px; font-weight: bold; }
     .btn-reset:hover { 
         background: #5a6268; 
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+    .btn-create { display: inline-block; transition: all 0.3s ease; padding: 10px 15px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 15px; text-decoration: none; font-weight: bold; }
+    .btn-create:hover { 
+        background: #0056b3; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+    .btn-back { display: inline-block; transition: all 0.3s ease; padding: 10px 15px; background: #6c757d; color: white; border-radius: 5px; font-size: 15px; text-decoration: none; font-weight: bold; }
+    .btn-back:hover { 
+        background: #5a6268; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transform: scale(1.05);
+        transition: all 0.3s ease;
     }
     
     .btn-warning { background: #ffc107; color: #333; font-size: 12px; padding: 5px 10px; text-decoration: none; }
@@ -251,8 +269,8 @@
 
     <h1>Jurnal Kunjungan</h1>
     <div>
-        <a href="/dashboard" class="btn-reset" style="margin-right: 10px;">Ke Dashboard</a>
-        <a href="/jurnals/create" class="btn-search" style="text-decoration: none;">+ Tambah Absen</a>
+        <a href="/dashboard" class="btn-back" style="margin-right: 10px;">Ke Dashboard</a>
+        <a href="/jurnals/create" class="btn-create">Tambah Absen</a>
     </div>
 </div>
 
