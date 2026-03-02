@@ -44,14 +44,19 @@ class AbsenController extends Controller
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
+        $request->validate([
             'nama' => 'required',
             'kelas' => 'required',
             'keperluan' => 'required',
             'judul_buku' => 'nullable',
         ]);
 
-        Jurnal::create($validatedData);
+        Jurnal::create([
+        'nama'       => strtoupper($request->nama),
+        'kelas'      => strtoupper($request->kelas),
+        'keperluan'  => $request->keperluan,
+        'judul_buku' => $request->judul_buku ? strtoupper($request->judul_buku) : null,
+        ]);
         return redirect('/success')->with('success', 'Absen Berhasil Ditambahkan');
     }
 
@@ -77,7 +82,12 @@ class AbsenController extends Controller
         ]);
 
         $jurnal = Jurnal::findOrFail($id);
-        $jurnal->update($request->all());
+        $jurnal->update([
+        'nama'       => strtoupper($request->nama),
+        'kelas'      => strtoupper($request->kelas),
+        'keperluan'  => $request->keperluan,
+        'judul_buku' => $request->judul_buku ? strtoupper($request->judul_buku) : null,
+        ]);
         return view('/successEdit')->with('success', 'Absen Berhasil Diupdate');
     }
 
