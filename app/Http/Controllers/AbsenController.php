@@ -13,7 +13,7 @@ class AbsenController extends Controller
     {
         $jurnals = Jurnal::query()
             ->when($request->filled('tanggal'), function ($query) use ($request) {
-                $query->whereDate('tanggal', $request->tanggal);
+                $query->whereDate('created_at', $request->tanggal);
             })
             ->when($request->filled('jam'), function ($query) use ($request) {
                 $jamInput = $request->jam;
