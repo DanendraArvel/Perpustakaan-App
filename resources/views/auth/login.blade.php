@@ -122,7 +122,7 @@
         </div>
 
         <button type="submit" class="btn">Login</button>
-        <p>Contact <a href="mailto:danendraarvelfw@gmail.com?subject=Request%20Testing%20Account" class="email-link">danendraarvelfw@gmail.com</a> for testing account</p>
+        <p>Contact <a href="https://mail.google.com/mail/?view=cm&fs=1&to=danendraarvelfw@gmail.com&su=Request%20Testing%20Account" target="_blank" class="email-link">danendraarvelfw@gmail.com</a> for testing account</p>
     </form>
 </div>
 @endsection
