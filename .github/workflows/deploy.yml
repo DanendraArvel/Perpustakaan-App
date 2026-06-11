@@ -19,7 +19,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         timeout: 60000
         local-dir: ./
-        server-dir: ./htdocs/
+        server-dir: /webabsensiperpustakaan.site.je/htdocs/
         exclude: |
           **/.git*
           **/node_modules/**
