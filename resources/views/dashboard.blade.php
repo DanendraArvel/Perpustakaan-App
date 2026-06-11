@@ -193,13 +193,12 @@
 </head>
 
 <div class="head">
-    <button class="toggle-sidebar" id="toggle-sidebar">☰ Menu</button>
-    <div class="brand-center">
-        <img src="https://smkn11semarang.sch.id/wp-content/uploads/2022/07/cropped-cropped-Logo-SMK-N-11-Smg-HD-1-scaled.png" alt="Logo SMKN N 11 Smg">
-        <p>PERPUSTAKAAN SMKN 11 SEMARANG</p>
+        <div class="brand-center">
+            <img src="" alt="Logo">
+            <p>PERPUSTAKAAN</p>
+        </div>
+        <div style="width: 80px; "></div>
     </div>
-    <div style="width: 80px;"></div>
-</div>
 
 @if(session('error'))
     <div class="alert alert-danger" style="position: fixed; top: 80px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 600px; padding: 15px; background: #f8d7da; color: #721c24; border-radius: 8px; border: 1px solid #f5c6cb; z-index: 1050; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">

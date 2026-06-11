@@ -235,13 +235,12 @@
 
 
 <div class="head">
-    <button class="toggle-sidebar" id="toggle-sidebar">☰ Menu</button>
-    <div class="brand-center">
-        <img src="https://smkn11semarang.sch.id/wp-content/uploads/2022/07/cropped-cropped-Logo-SMK-N-11-Smg-HD-1-scaled.png" alt="Logo SMKN N 11 Smg">
-        <p>PERPUSTAKAAN SMKN 11 SEMARANG</p>
+        <div class="brand-center">
+            <img src="" alt="Logo">
+            <p>PERPUSTAKAAN</p>
+        </div>
+        <div style="width: 80px; "></div>
     </div>
-    <div style="width: 80px;"></div>
-</div>
 
 
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
