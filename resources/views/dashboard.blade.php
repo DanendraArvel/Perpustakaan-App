@@ -193,6 +193,7 @@
 </head>
 
 <div class="head">
+        <button class="toggle-sidebar" id="toggle-sidebar">☰ Menu</button>
         <div class="brand-center">
             <img src="" alt="Logo">
             <p>PERPUSTAKAAN</p>
